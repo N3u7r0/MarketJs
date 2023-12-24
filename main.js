@@ -1,3 +1,1 @@
-import { productos } from "./productos/productManager";
-console.log(productos);
-
+console.log("este es el main");
