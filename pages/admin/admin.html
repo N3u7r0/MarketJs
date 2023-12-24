@@ -19,7 +19,7 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                    aria-expanded="false">Admin</a>
+                    aria-expanded="false">Productos</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="../smartTvs/smartTvs.html">Smart Tvs</a></li>
                     <li><a class="dropdown-item" href="../smartphones/smartphones.html">Smart-phones</a></li>
@@ -38,6 +38,95 @@
             </li>
         </ul>
     </nav>
+    <main class="mainAdmin">
+        <div class="divTablaAdmin">
+            <h2>Stock de productos.</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">tipo</th>
+                        <th scope="col">Fabricante</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>smartphones</td>
+                        <td>samsung</td>
+                        <td>a33</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="divFormAdmin">
+            <h2>Ingresar producto.</h2>
+            <form action="#">
+                <ul class="ulFormAdmin">
+                    <li class="liFormAdmin">
+                        <strong>ID:</strong>
+                        <input class=" form-control " type="number" placeholder="Ingrese el numero de id"
+                            aria-label=".form-control-lg example">
+                    </li>
+                    <li class="liFormAdmin">
+                        <strong>tipo:</strong>
+                        <input class=" form-control" type="text" placeholder="Ingrese el tipo de producto."
+                            aria-label=".form-control-lg example">
+                    </li>
+                    <li class="liFormAdmin">
+                        <strong>Fabricante:</strong>
+                        <input class=" form-control" type="text" placeholder="Ingrese el fabricante"
+                            aria-label=".form-control-lg example">
+                    </li>
+                    <li class="liFormAdmin">
+                        <strong>Modelo:</strong>
+                        <input class=" form-control" type="text" placeholder="Ingrese el modelo"
+                            aria-label=".form-control-lg example">
+                    </li>
+                    <li class="liFormAdmin">
+                        <strong>descripcion:</strong>
+                        <input class=" form-control" type="textarea" placeholder="Ingrese la descripcion"
+                            aria-label=".form-control-lg example">
+                    </li>
+                    <li class="liFormAdmin">
+                        <strong>foto:</strong>
+                        <input class="form-control" type="file" id="formFile" .>
+                    </li>
+                    <li class="liFormAdmin">
+                        <strong>cantidad</strong>
+                        <input class=" form-control" type="number" placeholder="Ingrese el numero de id"
+                            aria-label=".form-control-lg example">
+                    </li>
+                    <li class="liFormAdmin">
+                        <br>
+                    </li>
+                    <li class="liFormAdmin">
+                        <button class="btn btn-primary" type="button"><strong>Subir producto</strong></button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </main>
+
+
+
     <!--CDN jquery-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

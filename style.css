@@ -1,0 +1,22 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style:none;
+}
+.mainAdmin{
+    display: flex;
+    justify-content:space-around;
+    
+}
+.divTablaAdmin {
+    text-align: center;
+    width: 130vh;
+}
+.divFormAdmin{
+    text-align: center;
+    
+}
+.liFormAdmin{
+    display: flex;
+    flex-direction: column;
+}
