@@ -51,78 +51,59 @@
                             <th scope="col">tipo</th>
                             <th scope="col">Fabricante</th>
                             <th scope="col">Modelo</th>
+                            <th scope="col">Precio</th>
                             <th scope="col">Cantidad</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>smartphones</td>
-                            <td>samsung</td>
-                            <td>a33</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
+                    <tbody id="tbProductos">
                     </tbody>
                 </table>
             </div>
             <div class="divFormAdmin">
                 <h2 class="text-light">Ingresar producto.</h2>
-                <form action="#">
+                <form  id="formulario" action="#">
                     <ul class="ulFormAdmin">
                         <li class="liFormAdmin">
-                            <strong class="text-light">ID:</strong>
-                            <input class=" form-control " type="number" placeholder="Ingrese el numero de id"
-                                aria-label=".form-control-lg example">
-                        </li>
-                        <li class="liFormAdmin">
                             <strong class="text-light">tipo:</strong>
-                            <input class=" form-control" type="text" placeholder="Ingrese el tipo de producto."
+                            <input id="inputTipo" class=" form-control" type="text" placeholder="Ingrese el tipo de producto."
                                 aria-label=".form-control-lg example">
                         </li>
                         <li class="liFormAdmin">
                             <strong class="text-light">Fabricante:</strong>
-                            <input class=" form-control" type="text" placeholder="Ingrese el fabricante"
-                                aria-label=".form-control-lg example">
+                            <input id="inputFabricante" class=" form-control" type="text"
+                                placeholder="Ingrese el fabricante" aria-label=".form-control-lg example">
                         </li>
                         <li class="liFormAdmin">
                             <strong class="text-light">Modelo:</strong>
-                            <input class=" form-control" type="text" placeholder="Ingrese el modelo"
+                            <input id="inputModelo" class=" form-control" type="text" placeholder="Ingrese el modelo"
                                 aria-label=".form-control-lg example">
                         </li>
                         <li class="liFormAdmin">
                             <strong class="text-light">descripcion:</strong>
-                            <input class=" form-control" type="textarea" placeholder="Ingrese la descripcion"
-                                aria-label=".form-control-lg example">
+                            <input id="inputDescripcion" class=" form-control" type="textarea"
+                                placeholder="Ingrese la descripcion" aria-label=".form-control-lg example">
                         </li>
                         <li class="liFormAdmin">
                             <strong class="text-light">foto:</strong>
-                            <input class="form-control" type="file" placeholder="Ingrese el numero de id" id="formFile"
-                                .>
+                            <input id="inputFoto" class="form-control" type="file"
+                                placeholder="Ingrese el numero de id" id="formFile" .>
                         </li>
                         <li class="liFormAdmin">
-                            <strong class="text-light">cantidad</strong>
-                            <input class=" form-control" type="number" placeholder="Ingrese la cantidad"
+                            <strong class="text-light">precio:</strong>
+                            <div class="input-group 3">
+                                <span class="input-group-text">$</span>
+                                <input id="inputPrecio" type="text" class="form-control"
+                                    aria-label="Amount (to the nearest dollar)">
+                            </div>
+                        </li>
+                        <li class="liFormAdmin">
+                            <strong class="text-light">cantidad:</strong>
+                            <input id="inputCantidad" class=" form-control" type="number" placeholder="Ingrese la cantidad"
                                 aria-label=".form-control-lg example">
                         </li>
                         <li class="liFormAdmin">
                             <br>
-                        </li>
-                        <li class="liFormAdmin">
-                            <button class="btn btn-primary" type="button"><strong>Subir producto</strong></button>
+                            <button id="btnGuardar" class="btn btn-primary" type="button"><strong>Subir producto</strong></button>
                         </li>
                     </ul>
                 </form>
@@ -131,8 +112,6 @@
     </main>
     <footer>
     </footer>
-
-
     <!--CDN jquery-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -145,5 +124,4 @@
     <!--archivo JS-->
     <script src="./admin.js" type="module"></script>
 </body>
-
 </html>
