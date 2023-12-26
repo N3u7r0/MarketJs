@@ -1,22 +1,57 @@
 * {
     margin: 0%;
     padding: 0%;
-    list-style:none;
+    list-style: none;
 }
-.mainAdmin{
+
+body {
+    background-image: url("./images/fondo.jpg");
+    background-size: cover;
+}
+
+nav {
+    background-color: rgb(52, 50, 50);
+}
+
+h1 {
+    margin: 15px;
+}
+
+.divGlobal {
     display: flex;
-    justify-content:space-around;
-    
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin: 10px;
+    min-height: 650px;
+    border: double rgba(29, 18, 13, 0.391);
+    background-color: rgba(29, 18, 13, 0.667);
 }
+
+/*admin*/
+
 .divTablaAdmin {
     text-align: center;
-    width: 130vh;
+    width: 800px;
+    margin: 10px;
 }
-.divFormAdmin{
+
+.divFormAdmin {
     text-align: center;
-    
+    margin: 10px;
+
 }
-.liFormAdmin{
+
+.liFormAdmin {
     display: flex;
     flex-direction: column;
+}
+
+.ulFormAdmin {
+    padding: 0px;
+}
+
+/*Contacto*/
+.FormContacto {
+    margin-top: 10vh;
+    width: 70vh;
 }
