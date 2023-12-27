@@ -1,1 +1,1 @@
-console.log("pag smartphones");
+import { productos } from "../../modules/products.js";

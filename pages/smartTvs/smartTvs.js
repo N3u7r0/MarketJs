@@ -1,1 +1,1 @@
-console.log("pag smart tv");
+import { productos } from "../../modules/products.js";

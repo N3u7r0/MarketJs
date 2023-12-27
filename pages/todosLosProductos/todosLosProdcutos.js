@@ -1,4 +1,10 @@
-console.log("pag todos los productos");
+import { productos } from "../../modules/products.js";
+
+
+
+
+
+
 
 
 

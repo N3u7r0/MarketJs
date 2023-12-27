@@ -1,1 +1,1 @@
-console.log("notebooks");
+import { productos } from "../../modules/products.js";
