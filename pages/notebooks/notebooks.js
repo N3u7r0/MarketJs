@@ -1,1 +1,4 @@
-import { productos } from "../../modules/products.js";
+import{cardFilter} from "../../modules/DOM-cardFilter.js"
+
+
+ cardFilter();
