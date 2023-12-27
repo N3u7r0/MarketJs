@@ -37,7 +37,7 @@ function agregarItem() {
 
     // if para uqe no permita crear articulos vacios
     if (item.tipo != "" && item.marca != "" && item.nombre != "" && item.precio != "" && item.cantidad != "") {
-        productos.push(new Producto(item.id, item.tipo, item.marca, item.nombre, item.precio, item.cantidad));
+        productos.push(new Producto(item.id, item.tipo, item.marca, item.modelo, item.descripcion, item.foto ,item.precio, item.cantidad));
         listarProductos();
         resetearFormulario();//=====>aca llame la funcion para borrar el formulario.
         Swal.fire({
