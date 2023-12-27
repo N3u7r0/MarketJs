@@ -41,33 +41,34 @@
     <main>
         <h1 class="text-light">Contacto</h1>
         <div class="divGlobal">
-            <form action="*" class="FormContacto">
+            <form id="formulario" action="*" class="FormContacto">
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">
-                        <p class="text-light"><strong>Ingrese su nombre:</strong></p>
-                    </label>
-                    <input class="form-control" type="text" 
+                    <p class="text-light"><strong>Ingrese su nombre:</strong></p>
+                    <input id="inputNombreContacto" class="form-control" type="text"
                         aria-label=".form-control-lg example" placeholder="Ingrese su nombre">
                 </div>
                 <div>
-                    <label for="exampleFormControlInput1" class="form-label">
-                        <p class="text-light"><strong>Ingrese su mail:</strong></p>
-                    </label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                    <p class="text-light"><strong>Ingrese su mail:</strong></p>
+                    <input id="inputMailContacto" type="email" class="form-control" id="exampleFormControlInput1"
                         placeholder="Por ej: tuNombre@gmail.com">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">
-                        <P class="text-light"><strong>ingrese su mensaje:</strong></P>
-                    </label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ingrese su mensaje..."></textarea>
+                    <br>
+                    <P class="text-light"><strong>ingrese su mensaje:</strong></P>
+                    <textarea id="inputMsjContacto" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Ingrese su mensaje..."></textarea>
+                </div>
+                <div class="mb-3">
+                    <br>
+                    <button id="btnEnviarMsj" class="btn btn-primary" type="button"><strong>Enviar
+                            mensaje</strong></button>
+                </div>
+
             </form>
         </div>
     </main>
     <footer>
     </footer>
-
-
     <!--CDN jquery-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
