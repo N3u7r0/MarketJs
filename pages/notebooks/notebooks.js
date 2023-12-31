@@ -1,4 +1,4 @@
-import{cardFilter} from "../../modules/DOM-cardFilter.js"
+import { card } from "../../modules/DOM-cardsGenerator.js"
 
-
- cardFilter();
+let parametroCard = "notebook";
+card(parametroCard);

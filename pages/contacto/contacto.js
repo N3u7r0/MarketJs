@@ -1,6 +1,5 @@
 import { resetearFormulario } from "../../modules/DOM-resetForms.js";
 let mensajes = [];
-
 function mensaje() {
     class Mensaje {
         constructor(nombre, mail, msj) {
@@ -9,7 +8,6 @@ function mensaje() {
             this.msj = msj;
         }
     }
-
     let nombre = document.getElementById("inputNombreContacto").value;
     let mail = document.getElementById("inputMailContacto").value;
     let msj = document.getElementById("inputMsjContacto").value;

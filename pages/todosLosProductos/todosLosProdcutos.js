@@ -1,10 +1,3 @@
-import { productos } from "../../modules/products.js";
+import { card } from "../../modules/DOM-cardsGenerator.js"
 
-
-
-
-
-
-
-
-
+card();
