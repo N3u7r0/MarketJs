@@ -1,6 +1,9 @@
 import { productos } from "../../modules/products.js";
 import { resetearFormulario } from "../../modules/DOM-resetForms.js";
 import { Producto } from "../../modules/productManager.js";
+import { productosStorage } from "../../modules/DOM-cardsGenerator.js";
+
+let errImagen = "../../images/imagesProductList/noImg.jpg"; //==> link de img generica.
 let item; // ===> sirve para q no explote el for y la funcion listar prodcuto NO BORRAR!
 
 let tBodyProductos = document.getElementById("tbProductos");
@@ -17,7 +20,7 @@ function listarProductos() {
   tBodyProductos.appendChild(nuevaFila);
 }
 //con el for, recorro los productos, y con la funcion listarProductos creo una plantilla y los agrego al DOM.
-for (item of productos) {
+for (item of productosStorage || productos) {
   listarProductos();
 }
 function agregarItem() {
@@ -28,10 +31,11 @@ function agregarItem() {
   item.marca = document.getElementById("inputFabricante").value;
   item.modelo = document.getElementById("inputModelo").value;
   item.descripcion = document.getElementById("inputDescripcion").value;
-  item.foto = document.getElementById("inputFoto").value;
+  //item.foto = document.getElementById("inputFoto").files[0];  (no funciona xq es para subir el file al servidor y esto se ejecuta de manera local)
   item.precio = parseInt(document.getElementById("inputPrecio").value);
   item.cantidad = parseInt(document.getElementById("inputCantidad").value);
-  // .value al final es para extraer lo que ingresamos en los inputs.
+  item.foto = errImagen;
+  // .value al final es para extraer el "string" que ingresamos en los inputs.
 
   // if para uqe no permita crear articulos vacios
   if (
@@ -64,8 +68,8 @@ function agregarItem() {
       timer: 2300,
     });
     /////////////////////////LOCAL STORAGE///////////////////////////////
-    sessionStorage.setItem("itemStorage", JSON.stringify(productos)); 
-    } else {
+    sessionStorage.setItem("itemStorage", JSON.stringify(productos));
+  } else {
     Swal.fire({
       toast: true,
       position: "top-end",
@@ -80,5 +84,4 @@ function agregarItem() {
 let btnGuardar = document.getElementById("btnGuardar");
 btnGuardar.addEventListener("click", agregarItem);
 
-console.table(productos);
-
+console.table(productosStorage || productos);
